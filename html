@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+    <div class="form-box">
+
+    <h1>Portal do Aluno</h1>
+
+    <!-- LOGIN -->
+    <form id="loginForm" class="form active">
+    <h2>Entrar</h2>
+    <input type="text" id="loginUser" placeholder="Usuário ou e-mail">
+    <input type="password" id="loginSenha" placeholder="Senha">
+    <button type="submit">Entrar</button>
+
+    <p>
+       Não tem conta?
+    <a href="#" id="btnCadastro">Criar conta</a>
+    </p>
+
+    </form>
+
+
+    <!-- CADASTRO -->
+    <form id="cadastroForm" class="form">
+    <h2>Criar Conta</h2>
+    <input type="text" id="nome" placeholder="Nome completo">
+    <input type="text" id="usuario" placeholder="Nome de usuário">
+    <input type="email" id="email" placeholder="E-mail da escola">
+    <input type="text" id="matricula" placeholder="Número da matrícula">
+    <input type="password" id="senha" placeholder="Senha">
+    <input type="password" id="confirmarSenha" placeholder="Confirmar senha">
+    <p id="erroSenha" class="erro"></p>
+
+    <button type="submit">Cadastrar</button>
+
+    <p>Já tem conta?
+    <a href="#" id="btnLogin">Fazer login</a>
+    </p>
+
+     </form>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
